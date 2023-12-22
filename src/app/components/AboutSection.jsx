@@ -46,7 +46,7 @@ const TAB_DATA = [
         <li className=" font-bold text-fuchsia-300">Masters of Computer Applications (MCA)</li>
         <li className="italic">Solapur University, Solapur 2021-23</li>
         {gpaList.map((Gpa, index) => {
-          return <li className="font-bold italic flex flex-row gap-1">{Gpa.gpa} : ‎
+          return <li className="font-bold italic flex flex-row gap-1" key={""}>{Gpa.gpa} : ‎
             <AnimatedNumbers includeComma animateToNumber={parseFloat(Gpa.valueMca)} locale="en-US" className=" text-white flex flex-row"
               configs={(_, index) => {
                 return {
@@ -63,7 +63,7 @@ const TAB_DATA = [
         <li className=" font-bold text-fuchsia-300">Bachelor of Computer Science (B.Sc.)</li>
         <li className="italic">DBF Dayanand College of Arts And Science, Solapur 2018-21</li>
         {gpaList.map((Gpa, index) => {
-          return <li className="font-bold italic flex flex-row gap-1">{Gpa.gpa} : ‎
+          return <li className="font-bold italic flex flex-row gap-1" key={""}>{Gpa.gpa} : ‎
             <AnimatedNumbers includeComma animateToNumber={parseFloat(Gpa.valueBsc)} locale="en-US" className=" text-white flex flex-row"
               configs={(_, index) => {
                 return {
