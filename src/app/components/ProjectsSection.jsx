@@ -92,7 +92,7 @@ const ProjectsSection = () => {
       <div className="lg:flex flex-row justify-center italic lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-secondary-500">
         This is My first project<b>‎ The Portfolio</b> 
         <br />
-        Next Project is under development and I can't wait to show you. <Image src={sparkles} className=" lg:w-7 lg:h-7 lg:mt-[28px] lg:ml-[6px] max-sm:inline-block max-sm:w-6"></Image>
+        Next Project is under development and I can&apos;t wait to show you. <Image src={sparkles} className=" lg:w-7 lg:h-7 lg:mt-[28px] lg:ml-[6px] max-sm:inline-block max-sm:w-6"></Image>
       </div>
       
 
