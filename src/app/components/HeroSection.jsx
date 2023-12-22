@@ -40,7 +40,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Results-driven Front-End Engineer 
+          Results-driven Front-End Engineer and Software Developer
 
           </p>
           <div>
