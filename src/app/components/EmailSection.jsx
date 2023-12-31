@@ -6,6 +6,14 @@ import GmailIcon from "../../../public/gmail-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+
+function sendEmail() {
+  var mail = 'mailto:aniketsutrawe28@gmail.com';
+  var a = document.createElement('a');
+  a.href = mail;
+  a.click();
+};
+
 const EmailSection = () => {
   return (
     <section
@@ -28,12 +36,19 @@ const EmailSection = () => {
           <Link href="https://github.com/aniketsutrawe" target="blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="mailto: aniketsutrawe28@gmail.com">
+
+          {/* <Link href="mailto: aniketsutrawe28@gmail.com">
+            <Image src={GmailIcon} alt="Gmail Icon" />            Issue found in TabButton section after clicking on this link tag
+          </Link> */}
+
+          <div onClick={sendEmail}>
             <Image src={GmailIcon} alt="Gmail Icon" />
-          </Link>
+          </div>
+
           <Link href="https://www.linkedin.com/in/aniket-sutrawe-57744b171" target="blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
+
         </div>
       </div>
       <div className="w-1 lg:h-[340px]" id="behalf_of_email_Section"></div>
