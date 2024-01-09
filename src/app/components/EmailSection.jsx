@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-function sendEmail() {
+function sendEmail() {                                  //function to send email to me because 'mailto:' attribute is causing bugs on click 
   var mail = 'mailto:aniketsutrawe28@gmail.com';
   var a = document.createElement('a');
   a.href = mail;
@@ -54,7 +54,7 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative max-sm:mb-40"
     >
-      
+
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 max-sm:mt-16 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="font-bold text-white my-2 text-3xl max-sm:text-2xl">
@@ -70,10 +70,6 @@ const EmailSection = () => {
           <Link href="https://github.com/aniketsutrawe" target="blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-
-          {/* <Link href="mailto: aniketsutrawe28@gmail.com">
-            <Image src={GmailIcon} alt="Gmail Icon" />            Issue found in TabButton section after clicking on this link tag
-          </Link> */}
 
           <div onClick={sendEmail}>
             <Image src={GmailIcon} alt="Gmail Icon" />
@@ -147,7 +143,7 @@ const EmailSection = () => {
           </form>
         )}
       </div>
-      
+
     </section>
   );
 };
