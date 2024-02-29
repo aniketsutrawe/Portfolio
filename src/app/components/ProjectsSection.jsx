@@ -3,65 +3,28 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
-import sparkles from "../../../public/icons/sparkles.png"
+
 
 
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "React Portfolio Website",
-  //   description: "Project 1 description",
-  //   image: "/images/projects/1.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+  {
+    id: 1,
+    title: "React Portfolio Website",
+    description: "My Portfolio [Aniket Sutrawe]",
+    image: "/images/projects/1.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/aniketsutrawe/Portfolio",
+    previewUrl: "/",
+  },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Saniket Computer Institute Website",
+    description: "Contributed to the success of Saniket Computer Institute by developing a dynamic, user-friendly website. Elevated the online learning experience, showcasing my skills in React development.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/aniketsutrawe/saniketwebsite",
+    previewUrl: "https://sanikettypewriting.com",
   },
 ];
 
@@ -85,18 +48,9 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 py-10">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 py-8">
         My Projects
-      </h2>
-
-      <div className="lg:flex w-full flex-row justify-center italic lg:text-2xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-secondary-500" id="firstProject">
-        This is My first project<b>‎ The Portfolio</b> 
-        <br />
-        But Here is my demo project section that I created which will look like this
-        {/* Next Project is under development and I can&apos;t wait to show you.  */}
-        <Image src={sparkles} className=" lg:w-7 lg:h-7 lg:mt-[36px] lg:ml-[6px] max-sm:inline-block max-sm:w-6"></Image>
-      </div>
-      
+      </h2>      
 
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -115,7 +69,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-6">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
