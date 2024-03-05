@@ -88,7 +88,7 @@ const TAB_DATA = [
         <span className="italic ">Form IT Education Center, Pune.</span>
       </ul>
       <a href="https://drive.google.com/file/d/1kbvfbLRuDp169KGCRRkfJ7SriORj7m_p/view?usp=drive_link">
-      <Image src="/images/MernCertificate.jpg" alt="certificate" width={250} height={80} />
+      <Image src="/images/MernCertificate.jpg" alt="certificate" width={250} height={80} title="Open Certificate" />
       </a>
       </div>
     ),
