@@ -82,10 +82,15 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
+      <div className="flex gap-4 ">
       <ul className="list-disc pl-2">
         <li className="font-bold">MERN-Stack Course</li>
         <span className="italic ">Form IT Education Center, Pune.</span>
       </ul>
+      <a href="https://drive.google.com/file/d/1kbvfbLRuDp169KGCRRkfJ7SriORj7m_p/view?usp=drive_link">
+      <img src="\images\MernCertificate.jpg" alt="certificate" width={200} />
+      </a>
+      </div>
     ),
   },
   {
@@ -93,9 +98,9 @@ const TAB_DATA = [
     id: "hobbies",
     content: (
       <ul className="pl-2">
-        <li><img src="../icons/surfing.png" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Surfing on Internet</span></li> <br />
-        <li><img src="../icons/travelling.png" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Travelling</span></li> <br />
-        <li><img src="../icons/meditation.png" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Meditation</span></li> <br />
+        <li><img src="../icons/surfing.png" alt="surfing" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Surfing on Internet</span></li> <br />
+        <li><img src="../icons/travelling.png" alt="travel" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Travelling</span></li> <br />
+        <li><img src="../icons/meditation.png" alt="meditation" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Meditation</span></li> <br />
       </ul>
     ),
   },
@@ -114,7 +119,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} className="" />
+        <Image src="/images/about-image.png" alt="aboutImage" width={500} height={500} className="" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 max-md:text-center">About Me</h2>
           <p className="text-base lg:text-lg">
