@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Error404 = () => {
   return (
@@ -8,15 +8,17 @@ const Error404 = () => {
 		<div class="col-sm-12 ">
 		<div class="col-sm-10 col-sm-offset-1  text-center">
 		<div class="four_zero_four_bg">
-			<h1 class="text-center text-slate-900 font-logo"> 404 Page not Found! </h1>
+			<h1 class="text-center font-Rosemary max-md:text-lg text-black">404 Page not found!</h1>
+		
+		
 		</div>
 		
-		<div class="contant_box_404 text-slate-900 ">
+		<div class="contant_box_404 font-Rosemary text-black">
 		<h3 class="h2">
-		Look like you're lost
+		Look like you&apos;re lost
 		</h3>
 		
-		<p className='font-bold'>the page you are looking for not avaible!</p>
+		<p>The page you are looking for <strong>not available!</strong></p>
 		
 		<a href="/" class="link_404">Go to Home</a>
 	</div>
@@ -25,7 +27,7 @@ const Error404 = () => {
 		</div>
 	</div>
 </section>
-  );
-};
+  )
+}
 
-export default Error404;
+export default Error404

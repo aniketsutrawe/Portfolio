@@ -27,14 +27,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 ">
-        <li className="lg:inline-block max-md:block  max-md:p-1">React.Js <img src="../icons/reactJs.png" alt="React logo" width={25} className="inline-block align-middle p-0.5 m-1" /></li>
-        <li className="lg:inline-block lg:ml-24 max-md:block max-md:ml-0 max-md:p-1">Express <img src="../icons/express.png" alt="ExpressJs logo" className="inline-block align-middle bg-yellow-300 opacity-50 py-0.5 m-1 w-16 h-7" /></li>
+        <li className="lg:inline-block max-md:block  max-md:p-1">React.Js <Image src="/icons/reactJs.png" alt="React logo" width={25} height={25} className="inline-block align-middle p-0.5 m-1" /></li>
+        <li className="lg:inline-block lg:ml-24 max-md:block max-md:ml-0 max-md:p-1">Express <Image src="/icons/express.png" width={65} height={25} alt="ExpressJs logo" className="inline-block align-middle bg-yellow-300 opacity-50 py-0.5 m-1 w-16 h-7" /></li>
         <br className="max-sm:hidden" /><br className="max-sm:hidden" />
-        <li className="lg:inline-block max-md:block max-md:p-1">Node.Js <img src="../icons/nodejs.png" alt="NodeJs logo" width={65} className="inline-block align-top m-1" /></li>
-        <li className="lg:inline-block lg:ml-14 max-md:block max-md:ml-0 max-md:p-1">MongoDB <img src="../icons/mongodb.png" alt="MongoDB logo" width={65} className="inline-block align-top m-1" /></li>
+        <li className="lg:inline-block max-md:block max-md:p-1">Node.Js <Image src="/icons/nodejs.png" alt="NodeJs logo" width={65} height={65}  className="inline-block align-top m-1" /></li>
+        <li className="lg:inline-block lg:ml-14 max-md:block max-md:ml-0 max-md:p-1">MongoDB <Image src="/icons/mongodb.png" alt="MongoDB logo" width={65} height={15} className="inline-block align-top m-1" /></li>
         <br className=" max-sm:hidden" /><br className=" max-sm:hidden" />
-        <li className="lg:inline-block max-md:block max-md:p-1">JavaScript <img src="../icons/javascript.png" alt="Javascript logo" width={25} className="inline-block align-middle  m-1" /></li>
-        <li className="lg:inline-block lg:ml-[82px] max-md:block max-md:ml-0 max-md:p-1">TailwindCSS <img src="../icons/tailwindcss.png" alt="Tailwind logo" width={140} className="inline-block align-middle m-0.5" /></li>
+        <li className="lg:inline-block max-md:block max-md:p-1">JavaScript <Image src="/icons/javascript.png" alt="Javascript logo" width={25} height={25} className="inline-block align-middle  m-1" /></li>
+        <li className="lg:inline-block lg:ml-[82px] max-md:block max-md:ml-0 max-md:p-1">TailwindCSS <Image src="/icons/tailwindcss.png" alt="Tailwind logo" width={140} height={30} className="inline-block align-middle m-0.5" /></li>
       </ul>
     ),
   },
@@ -88,7 +88,7 @@ const TAB_DATA = [
         <span className="italic ">Form IT Education Center, Pune.</span>
       </ul>
       <a href="https://drive.google.com/file/d/1kbvfbLRuDp169KGCRRkfJ7SriORj7m_p/view?usp=drive_link">
-      <img src="\images\MernCertificate.jpg" alt="certificate" width={200} />
+      <Image src="/images/MernCertificate.jpg" alt="certificate" width={250} height={80} />
       </a>
       </div>
     ),
@@ -98,9 +98,9 @@ const TAB_DATA = [
     id: "hobbies",
     content: (
       <ul className="pl-2">
-        <li><img src="../icons/surfing.png" alt="surfing" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Surfing on Internet</span></li> <br />
-        <li><img src="../icons/travelling.png" alt="travel" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Travelling</span></li> <br />
-        <li><img src="../icons/meditation.png" alt="meditation" width={35} className=" inline-block"></img> &nbsp; <span className="italic font-semibold">Meditation</span></li> <br />
+        <li><Image src="/icons/surfing.png" alt="surfing" width={35} height={35} className=" inline-block"></Image> &nbsp; <span className="italic font-semibold">Surfing on Internet</span></li> <br />
+        <li><Image src="/icons/travelling.png" alt="travel" width={35} height={35} className=" inline-block"></Image> &nbsp; <span className="italic font-semibold">Travelling</span></li> <br />
+        <li><Image src="/icons/meditation.png" alt="meditation" width={35} height={35} className=" inline-block"></Image> &nbsp; <span className="italic font-semibold">Meditation</span></li> <br />
       </ul>
     ),
   },
