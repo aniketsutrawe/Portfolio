@@ -26,6 +26,15 @@ const projectsData = [
     gitUrl: "https://github.com/aniketsutrawe/saniketwebsite",
     previewUrl: "https://sanikettypewriting.com",
   },
+  {
+    id: 3,
+    title: "My Landing Page",
+    description: "Created My landing Page using ReactJs and Tailwind CSS for the task of Codsoft Intership.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/aniketsutrawe/Landing_Page",
+    previewUrl: "https://aniket-landing-page.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
